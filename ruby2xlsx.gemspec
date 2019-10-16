@@ -16,7 +16,8 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "writeexcel", ">= 1.0.5"
+  # s.add_dependency "writeexcel", ">= 1.0.5"
+  s.add_dependency "write_xlsx", ">= 0.85.7"
   s.add_dependency "activemodel", ">= 3.1.3"
 
   s.add_development_dependency "sqlite3"

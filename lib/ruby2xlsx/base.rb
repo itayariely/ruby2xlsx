@@ -1,4 +1,5 @@
-require 'writeexcel'
+# require 'writeexcel'
+require 'write_xlsx'
 require 'stringio'
 
 module Ruby2xlsx
@@ -13,7 +14,8 @@ module Ruby2xlsx
     end
 
     def workbook
-      @workbook ||= ::WriteExcel.new(@io)
+      # @workbook ||= ::WriteExcel.new(@io)
+      @workbook ||= ::WriteXLSX.new(@io)
     end
 
     def worksheet
