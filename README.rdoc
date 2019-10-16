@@ -1,12 +1,14 @@
 = Ruby2xlsx
 
 Export your data to Excel. Provide two ways for export data: template or renderer.
+This gem is Forked gem based on "Ruby2xlsx" with one changed:
+Instead of 'writeexcel' that generates xls I use 'write_xlsx' that generates xlsx
 
 == Install
 
 Add gem to your Gemfile:
 
-  gem "ruby2xlsx"
+  gem "ruby2xlsx", :git => "https://github.com/itayariely/ruby2xlsx.git"
 
 == Usage
 
@@ -84,7 +86,7 @@ In view (app/views/articles/index.xlsx.xrb):
 
 == Dependencies
 
-1. https://github.com/cxn03651/writeexcel
+1. https://github.com/cxn03651/write_xlsx
 2. https://rubygems.org/gems/activemodel
 
 == Other similar gems
