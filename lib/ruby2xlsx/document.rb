@@ -42,7 +42,7 @@ module Ruby2xlsx
     end
 
     def filename
-      @filename ||= [(@options[:filename] || @klass.model_name.plural || 'document'), '.xls'].join
+      @filename ||= [(@options[:filename] || @klass.model_name.plural || 'document'), '.xlsx'].join
     end
 
     def each_with_index
