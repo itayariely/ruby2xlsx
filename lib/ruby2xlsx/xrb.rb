@@ -14,7 +14,7 @@ module Ruby2xlsx
         end
       end
 
-    def call(template)
+    def call(template, source)
       %{ controller.send_data ::Ruby2xlsx::Template.new(#{template.source.inspect}).render(self, assigns.merge(local_assigns)),
           :filename => [controller.instance_variable_get(:@xlsx_filename) || controller.action_name, ".xlsx"].join, 
           :type => "application/vnd.ms-excel",
